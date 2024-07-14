@@ -15,7 +15,7 @@ html {
 
 /* common styles */
 .btn-primary {
-    border-radius: 8px;
+    border-radius: 0.8rem;
     background: #FF900E;
     padding: 2rem 2.5rem;
     border: 0;
@@ -57,7 +57,7 @@ section {
 }
 
 .section-heading {
-    width: 540px;
+    width: 54rem;
 }
 
 /* header styles here */
@@ -151,7 +151,7 @@ main {
 
 .facts-card {
     border-radius: 0.8rem;
-    border: 1px solid #FF900E;
+    border: 0.1rem solid #FF900E;
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -173,8 +173,22 @@ main {
 }
 
 .facts-card .card-title {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
+}
+
+/* Our Sponsors section styles here */
+.sponsors .section-heading {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponsor-img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 5rem;
 }
 
 
@@ -191,7 +205,8 @@ main {
 
     nav,
     .teams-container,
-    .facts-card-container {
+    .facts-card-container,
+    .sponsor-img-container {
         flex-direction: column;
         gap: 2rem;
     }
@@ -231,18 +246,24 @@ main {
     .facts-card {
         width: 100%;
     }
+
+    .sponsor-img-container img {
+        margin-bottom: 2rem;
+    }
 }
 
 /* Tablet or medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    section{
+    section {
         margin: 8rem 0;
     }
+
     .header {
         padding: 3rem;
     }
 
-    nav, .teams-container  {
+    nav,
+    .teams-container, .sponsor-img-container {
         flex-direction: column;
         gap: 2rem;
     }
@@ -261,12 +282,16 @@ main {
         width: 100%;
     }
 
-    .facts-card-container{
+    .facts-card-container {
         flex-wrap: wrap;
         gap: 1.8rem;
     }
-    .facts-card{
+
+    .facts-card {
         width: 45%;
         margin-bottom: 1.5rem;
+    }
+    .sponsor-img-container img {
+        margin-bottom: 2rem;
     }
 }
