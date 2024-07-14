@@ -42,6 +42,24 @@ section {
     color: #FF900E;
 }
 
+.section-title {
+    color: #131313;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+}
+
+.section-description {
+    color: #727272;
+    font-size: 1.6rem;
+    line-height: 26.rem;
+    margin-bottom: 3.2rem;
+}
+
+.section-heading {
+    width: 540px;
+}
+
 /* header styles here */
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -52,12 +70,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav-title {
-    color: #131313;
-    font-size: 4.5rem;
-    font-weight: 700;
 }
 
 nav>ul {
@@ -92,13 +104,6 @@ nav li a {
     margin-bottom: 2.4rem;
 }
 
-.banner-description {
-    color: #727272;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    margin-bottom: 3.2rem;
-    /* 162.5% */
-}
 
 .banner img {
     width: 100%;
@@ -132,19 +137,46 @@ main {
     }
 }
 
-.teams-title {
-
-    font-size: 4.5rem;
+.teams-content .text-gray {
     font-weight: 500;
     margin-bottom: 2.4rem;
 }
 
-.teams-description {
-    color: #727272;
-    font-size: 1.6rem;
-    line-height: 26.rem;
-    margin-bottom: 3.2rem;
+/* Some Facts Section style */
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
 }
+
+.facts-card {
+    border-radius: 0.8rem;
+    border: 1px solid #FF900E;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2.4rem;
+}
+
+.facts-card img {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.facts-card .card-states {
+    color: #424242;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.facts-card .card-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
 
 /* Responsive Media Queries */
 /* Mobile Device */
@@ -180,16 +212,17 @@ main {
     .teams-content {
         width: 100%;
     }
+
     .teams-content {
-        & .teams-title{
+        & .teams-title {
             margin-bottom: 1rem;
         }
 
-        & .teams-description{
+        & .teams-description {
             margin-bottom: 2.8rem;
         }
     }
-    
+
 }
 
 /* Tablet or medium devices */
